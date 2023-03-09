@@ -6,11 +6,11 @@ body {
 }
 
 a {
-  color: #283966;
+  color: #ffffff;
 }
 
 a:visited {
-  color: #283966;
+  color: #ffffff;
 }
 
 #encabezado {
@@ -45,6 +45,24 @@ nav {
 .lista-nav li {
   float: right;
   margin: 0.5em;
+}
+
+.lista-contacto{
+  width: 100%;
+  list-style-type: none;
+  padding: 0%;
+  grid-column: 2;
+}
+
+.lista-contacto a{
+  margin: 2px;
+  color: #283966;
+  text-decoration: none;
+}
+
+.lista-contacto a:visited{
+  color: #283966;
+  text-decoration: none;
 }
 
 header {
@@ -88,6 +106,18 @@ section {
   align-items: center;
   align-content: center;
   justify-content: space-between;
+  justify-items: center;
+}
+
+#formulario {
+  margin: 1% 2% 1% 2%;
+  display: grid;
+  padding: 2%;
+  border-radius: 5px;
+  background-color: #b79d94;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   justify-items: center;
 }
 
@@ -168,7 +198,7 @@ footer li {
 @media only screen and (max-width: 600px) {
   .lista-nav {
     float: none;
-    width: 30%;
+    width: 100%;
   }
 
   .col-d {
