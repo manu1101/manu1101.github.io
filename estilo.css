@@ -169,7 +169,6 @@ footer li {
   border: 1px solid #cc8c01;
   cursor: pointer;
   color: #f5f5f5;
-  font-family: Arial;
   font-size: 17px;
   padding: 15px;
   width: 100%;
@@ -202,6 +201,7 @@ footer li {
 .panel {
   padding: 0 18px;
   width: 100%;
+  margin:1%;
   border-radius: 10px;
   background-color: #a35d67;
   max-height: 0;
