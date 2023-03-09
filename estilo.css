@@ -203,10 +203,17 @@ footer li {
   padding: 0 18px;
   width: 100%;
   border-radius: 10px;
-  background-color: #632a32;
+  background-color: #a35d67;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+#capacitacion li{
+  border-radius: 10px;
+  border-style: dashed;
+  margin: 1%;
+  padding: 1%;
 }
 
 @media only screen and (max-width: 600px) {
