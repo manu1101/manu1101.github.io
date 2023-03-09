@@ -15,6 +15,7 @@ a:visited {
 
 #encabezado {
   display: grid;
+  padding: 0% 2% 0% 2%;
   margin: 0% 2% 0% 2%;
   background-color: #93c0a4;
   border-radius: 5px;
@@ -81,7 +82,7 @@ header {
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
-  font-size: 1em;
+  font-size: 1.2em;
   padding: 0.3em;
   text-decoration: none;
   text-shadow: 0px 1px 0px #283966;
@@ -187,9 +188,22 @@ footer li {
   background-color: #bab1ba;
 }
 
+.accordion:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; 
+}
 .panel {
   padding: 0 18px;
-  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #632a32;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -199,10 +213,28 @@ footer li {
   .lista-nav {
     float: none;
     width: 100%;
+    font-size: 0.8em;
+  }
+
+  #logo{
+    width: 80%;
   }
 
   .col-d {
     grid-column-start: 1;
     grid-column-end: auto;
   }
+}
+
+@media only screen and (max-width: 472px) {
+  .lista-nav {
+    float: none;
+    width: 100%;
+    font-size: 0.6em;
+  }
+
+  #logo{
+    width: 80%;
+  }
+
 }
